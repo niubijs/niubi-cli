@@ -5,26 +5,15 @@
 ### 安装
 
 ```javascript
-npm
-install
-niubi - cli - g
+npm install
+cd ./niubi-cli
+npm link
 ```
 
 ### 相关命令
 
-后端项目：
+#### 快捷创建 vue 文件
 
 ```javascript
-niubi create thinkphp projectName
-完成进度：0%
-```
-
-前端项目
-
-```javascript
-niubi create vue projectName
-完成进度：0%
-    
-niubi create react projectName
-完成进度：0%
+niubi make:vue src/pages/home
 ```

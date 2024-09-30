@@ -1,0 +1,12 @@
+{
+    "name": "@niubi/make",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+    },
+    "author": "",
+    "license": "ISC"
+}

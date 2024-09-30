@@ -1,0 +1,13 @@
+{
+    "name": "@niubi/niubi-cli",
+    "version": "0.0.1",
+    "description": "命令库",
+    "type": "module",
+    "main": "index.js",
+    "keywords": [
+        "niubi",
+        "niubi-cli"
+    ],
+    "author": "是什么你猜",
+    "license": "MIT"
+}
