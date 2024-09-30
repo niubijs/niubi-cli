@@ -13,7 +13,7 @@ program.command('make:vue')
     .description('创建一个新的 vue 组件')
     .argument('<filename>', '文件名称，例：src/pages/Home')
     .option('-n,-name <componentName>', '组件名称，例：Home')
-    // .option('-t,-type <type>', '需要创建的 vue 版本，参数2[vue2]，3[vue3]')
+    .option('-t,-type <type>', 'vue 版本，参数2[vue2]，3[vue3]')
     .action(async (filename, options) => {
         await createVueFile(filename, options)
     });

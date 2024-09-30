@@ -1,9 +1,38 @@
 <template>
-    <div>Hello World</div>
+    <div>
+        {{ message }}
+    </div>
 </template>
 
 <script setup>
+{{#if isVueThree}}
+import {ref} from 'vue';
 
+const message = ref('hello world');
+{{else}}
+export default {
+    name: '{{componentName}}',
+    components: {},
+    props:{},
+    data() {
+        return {
+            message: 'hello world'
+        };
+    },
+    computed:{},
+    beforeCreate() {},
+    created() {},
+    beforeMount: {},
+    mounted: {},
+    beforeUpdate: {},
+    updated: {},
+    beforeDestroy: {},
+    destroyed: {},
+    activated: {},
+    deactivated: {},
+    methods: {}
+}
+{{/if}}
 </script>
 
 <style lang="scss" scoped>
