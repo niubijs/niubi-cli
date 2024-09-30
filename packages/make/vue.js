@@ -11,24 +11,22 @@ export const createVueFile = async (filename, options) => {
 
         // 读取模板文件
         const templateContent = await fs.readFile(templatePath, 'utf-8');
-        console.log(templateContent)
 
-        // // 编译模板
+        // 编译模板
         // const template = Handlebars.compile(templateContent);
-        //
-        // // 准备数据
+
+        // 准备数据
         // const componentName = options.name || 'UnnamedComponent';
         // const data = {
         //     COMPONENT_NAME: componentName,
         //     hasSpecialMethod: options.method
         // };
-        //
-        // // 渲染模板
+
+        // 渲染模板
         // const renderedContent = template(data);
-        //
+
         // // 构建目标文件的完整路径
         const targetPath = path.join(process.cwd(), filename) + '.vue';
-        console.log(targetPath)
         // // 写入新文件
         // await fs.promises.writeFile(targetPath, templateContent);
         await ensureFileExistsAndWrite(targetPath, templateContent)
