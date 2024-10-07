@@ -1,0 +1,14 @@
+{
+    "name": "@niubi/create",
+    "version": "1.0.0",
+    "description": "快捷创建项目，基础的 vue、react 项目",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+    },
+    "keywords": [
+        "create"
+    ],
+    "author": "是什么你猜",
+    "license": "MIT"
+}
